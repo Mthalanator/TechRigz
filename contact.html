@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechRigz - Contact Us</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="images/logo.svg" alt="TechRigz Logo" class="logo-img">
+      <span class="logo-text">TechRigz</span>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="games.html">Top 10 Games</a>
+      <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1 class="page-title">Contact & Purchase Inquiries</h1>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+      <div class="card">
+        <h2 style="color: var(--accent-blue); margin-bottom: 1rem;">Store Information</h2>
+        <p><strong>Location:</strong> Pietermaritzburg, KwaZulu-Natal</p>
+        <p><strong>Email:</strong> sales@techrigz.co.za</p>
+        <p><strong>Phone:</strong> +27 (0)33 123 4567</p>
+        <p><strong>Business Hours:</strong> Mon - Fri: 08:00 - 17:00 | Sat: 09:00 - 13:00</p>
+        <div style="margin-top: 1.5rem; padding: 1rem; background-color: var(--bg-header); border-radius: 4px; border: 1px solid var(--border-color);">
+          <p style="color: var(--text-muted); font-size: 0.9rem;">Visit our showroom for live custom PC demonstrations, benchmarking, and immediate game pass activations.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 style="color: var(--accent-blue); margin-bottom: 1rem;">Send an Inquiry</h2>
+        <form id="contactForm" onsubmit="handleContactSubmit(event)">
+          <div class="form-group">
+            <label>Full Name:</label>
+            <input type="text" required>
+          </div>
+          <div class="form-group">
+            <label>Email Address:</label>
+            <input type="email" required>
+          </div>
+          <div class="form-group">
+            <label>Hardware / Game Request:</label>
+            <input type="text" placeholder="e.g. RTX 4080 Rig or GTA V Inquiry">
+          </div>
+          <div class="form-group">
+            <label>Message:</label>
+            <textarea rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn" style="width: 100%;">Submit Inquiry</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 TechRigz Pietermaritzburg. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    function handleContactSubmit(e) {
+      e.preventDefault();
+      alert('Thank you for reaching out to TechRigz! Your inquiry has been submitted, and our shop representative will contact you shortly.');
+      document.getElementById('contactForm').reset();
+    }
+  </script>
+</body>
+</html>

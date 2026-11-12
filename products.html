@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechRigz - Products</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="images/logo.svg" alt="TechRigz Logo" class="logo-img">
+      <span class="logo-text">TechRigz</span>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html" class="active">Products</a>
+      <a href="games.html">Top 10 Games</a>
+      <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1 class="page-title">Gaming PCs & Components</h1>
+
+    <div class="grid">
+      <div class="card">
+        <img src="images/rtx-4080-rig.jpg" alt="RTX 4080 Gaming Rig">
+        <h3>RTX 4080 Ultra Rig</h3>
+        <p class="description">AMD Ryzen 9 7900X, RTX 4080 16GB, 32GB DDR5, 2TB NVMe SSD</p>
+        <p class="price">R 28,000</p>
+        <button class="btn" onclick="addToCart('RTX 4080 Ultra Rig', 28000)">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="images/ryzen-7-rig.jpg" alt="Ryzen 7 Custom Build">
+        <h3>Ryzen 7 Pro Rig</h3>
+        <p class="description">AMD Ryzen 7 7800X3D, RTX 4070 Ti, 16GB DDR5, 1TB NVMe SSD</p>
+        <p class="price">R 18,500</p>
+        <button class="btn" onclick="addToCart('Ryzen 7 Pro Rig', 18500)">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="images/rtx-4090-gpu.jpg" alt="NVIDIA RTX 4090 GPU">
+        <h3>NVIDIA GeForce RTX 4090</h3>
+        <p class="description">24GB GDDR6X, Flagship Gaming Graphics Card</p>
+        <p class="price">R 35,000</p>
+        <button class="btn" onclick="addToCart('NVIDIA GeForce RTX 4090', 35000)">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="images/ryzen-9-cpu.jpg" alt="AMD Ryzen 9 Processor">
+        <h3>AMD Ryzen 9 7950X CPU</h3>
+        <p class="description">16 Cores, 32 Threads, up to 5.7GHz Processor</p>
+        <p class="price">R 11,500</p>
+        <button class="btn" onclick="addToCart('AMD Ryzen 9 7950X CPU', 11500)">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="images/gaming-keyboard.jpg" alt="RGB Mechanical Keyboard">
+        <h3>Pro RGB Mechanical Keyboard</h3>
+        <p class="description">Tactile Mechanical Switches, Per-key RGB Lighting</p>
+        <p class="price">R 1,200</p>
+        <button class="btn" onclick="addToCart('Pro RGB Mechanical Keyboard', 1200)">Add to Cart</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 TechRigz Pietermaritzburg. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
